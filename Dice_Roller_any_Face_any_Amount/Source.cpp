@@ -32,14 +32,16 @@ int main()
 	else
 	{
 		 cout << "Result: ";
-		 int a;
+		 int a, sum = 0;
 	     srand(time(0));
 			for (int i = 0; i < y; i++)
-			{			
-				a = (rand() % x) + 1;
-				cout << a << " ";	
-							 
+			{
+					a = (rand() % x) + 1;
+					cout << a << " ";
+					sum += a;
 			}
+			cout << endl;
+			cout <<"Combined result: "<<sum;
 			cout << endl;
 			
 			
